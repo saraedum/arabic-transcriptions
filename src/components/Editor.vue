@@ -1,5 +1,8 @@
 <template>
   <v-container fluid>
+    <v-chip class="text-center" color="red">
+      This page does not work on Chrome/Chromium/Safari/Edge yet. Please use Firefox.
+    </v-chip>
     <v-text-field
       label="Title"
       style="direction: rtl"
