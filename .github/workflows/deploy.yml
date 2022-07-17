@@ -1,0 +1,25 @@
+name: Deploy
+on:
+  push: { branches: [ "main" ] }
+  pull_request: { branches: [ "main" ] }
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with: { submodules: recursive }
+      - name: build
+        run: |
+          yarn install
+          yarn build
+      - uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: dist
+          target-folder: ""
+          single-commit: true
