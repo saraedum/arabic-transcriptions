@@ -54,21 +54,25 @@ import ArabicLine from "./ArabicLine.vue";
 export default defineComponent({
   data() {
     return {
-      title: "اليَوْمُ الأوَّلُ: النُّور",
-      title_aid: "a-l-ya-w-mu (a)-l-'a-wwa-lu: 'a-(l)-nn-ū-r",
+      title: "الفاتحة",
+      title_aid: "a:l-f:ā:ti:ḥ:a",
       arabic: `
-فِي البَدءِ خَلَقَ اللهُ السَّمَاوَاتِ وَالأرْضَ.
-كَانَتِ الأرْضُ قَاحِلَةً وَفَارِغَةً.
-وَكَانَ الظَّلَامُ يَلُفُّ المُحِيطَ، وَرُوحُ اللهِ تُحَوِّمُ فَوْقَ المِيَاهِ.
-فِي ذَلِكَ الوَقْتِ، قَالَ اللهُ: «لِيَكُنْ نُورٌ.»
- فَصَارَ نُورٌ
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ
+ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+مَٰلِكِ يَوۡمِ ٱلدِّينِ
+إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ
+ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ
+صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ
       `,
       aid: `
-f:ī (a):l-ba:d:'i ẖa:la:qa (a):l:la:hu as-sa:mā:wā:ti wa-(a):l'a:r:ḍa. 
-k:ā:na:ti (a):l'a:r:ḍu q:ā:ḥi:la:tan wa-f:ā:ri:ġa:tan. 
-wa-k:ā:na (a):(l)-ẓẓa:l:ā:mu ya:la:ffu (a):l-mu:ḥi:ṭa, wa-r:ū:ḥu (a):l:lā:hi tu-ḥa:wwa:mu fa:w:qa (a):l-m:ī:ā:ḥi.
-f:ī ḏā:li:ka (a):l-wa:q:ti q:ā:la (a):l:lā:hu: "li-ya-ku:n n:ū:ru."
-fa-ṣ:ā:ra n:ū:ru.
+bi:s:mi (a):l:lā:hi (a):(l)-ra:ḥ:mā:ni (a):(l)-rra:ḥ:ī:m
+'a:l-ḥa:m:du li-lā:hi ra:bbu (a):l-ʿā:la:m:ī:n
+'a:(l)-rra:ḥ:mā:ni (a):(l)-rra:ḥ:ī:m
+mā:li:ki ya:w:mi (a):(l)-dd:ī:n
+'i:yy:ā:ka na-ʿa:bu:du wa-'i:yy:ā:ka na-s:ta:ʿ:ī:n
+'i:h:di-n:ā (a):(l)-ṣṣi:rā:ṭa (a):l-mu:s:ta:q:ī:m
+ṣṣi:rā:ṭa (a):lla:ḍ:ī:n 'a:n:ʿa:m-ta ʿa:la:y:hi:m ġa:y:ri (a):l:ma-ġ:ḍ:ū:bi  ʿa:la:y-hi:m wa-l:ā (a):(l)-ḍḍ:ā:ll:ī:n
       `,
     };
   },
