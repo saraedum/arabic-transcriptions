@@ -1,6 +1,6 @@
 <template>
-  <span class="word">
-    <ruby>
+  <span class="word" :class="{firefox, chrome: !firefox}">
+    <ruby v-if="firefox">
       <rbc>
         <span class="arabic">
           <span v-for="([char, odd], i) of arabic_lights" :key="i" :class="{odd}">
@@ -23,7 +23,26 @@
         </rt>
       </rtc>
     </ruby>
-  </span>&nbsp;
+    <ruby v-else>
+      <span class="arabic">
+        <span v-for="([char, odd], i) of arabic_lights" :key="i" :class="{odd}">
+          {{ char }}
+        </span>
+      </span>
+      <rt>
+        <span class="transcription">
+          <span>
+            {{ transcription.replace(/[,.:"?!]/g, '') }}
+          </span>
+        </span>
+        <span class="aid">
+          <span v-for="(char, i) of aids" :key="i" :class="{odd: i % 2}">
+            {{ char }}
+          </span>
+        </span>
+      </rt>
+    </ruby>
+  </span>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -76,33 +95,66 @@ export default defineComponent({
         }
       }
       return chars;
+    },
+    firefox() {
+      return /firefox/i.test(navigator.userAgent);
     }
   },
 })
 </script>
 <style lang="scss" scoped>
 .word {
+  position: relative;
+  margin-left: 1ex;
+  margin-right: 1ex;
+
   .odd {
     color: cornflowerblue;
   }
-  rtc.aid {
-    position: relative;
+
+  .aid {
     direction: ltr;
-    top: .8em;
 
     span {
       padding: .3ex;
       display: inline-block;
     }
   }
-  rtc.transcription {
-    position: relative;
-    top: -.8em;
 
+  .transcription {
     span {
       display: inline-block;
-      direction: ltr;
     }
+
+    direction: ltr;
+  }
+}
+
+.word.firefox {
+  .aid {
+    position: relative;
+    top: .8em;
+  }
+  .transcription {
+    position: relative;
+    top: -.8em;
+  }
+}
+
+.word.chrome {
+  .aid {
+    text-align: center;
+
+    span {
+      padding-bottom: .6em;
+    }
+  }
+
+  .transcription {
+    position: absolute;
+    top: 3.4em;
+    left: .2em;
+    white-space: nowrap;
   }
 }
 </style>
