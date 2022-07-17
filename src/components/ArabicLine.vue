@@ -1,6 +1,6 @@
 <template>
   <p class="line">
-    <arabic-word v-for="(arabic, i) of arabics" :key="i" :arabic="arabic" :transcription="transcriptions[i]" :aid="aids[i]" />
+    <arabic-word v-for="(arabic, i) of arabics" :key="i" :arabic="arabic" :aid="aids[i]" />
   </p>
 </template>
 <script lang="ts">
@@ -21,7 +21,7 @@ export default defineComponent({
 
   computed: {
     arabics() {
-      return this.arabic.trim().split(/\s+/);
+      return this.arabic.trim().split(/\s+/).filter(x => x);
     },
     transcriptions() {
       return (this.transcription || '').trim().split(/\s+/);
