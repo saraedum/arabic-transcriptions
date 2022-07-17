@@ -1,26 +1,24 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <Editor/>
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Editor from './components/Editor.vue'
 
 export default defineComponent({
   name: 'App',
 
   components: {
-    HelloWorld,
+    Editor,
   },
 
   data () {
-    return {
-      //
-    }
+    return {}
   },
 })
 </script>

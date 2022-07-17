@@ -9,7 +9,13 @@ import vuetify from 'vite-plugin-vuetify'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-		vue(),
+		vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: tag => tag == "rtc" || tag == "rbc",
+        }
+      }
+    }),
 		vuetify({ autoImport: true }),
 ],
   resolve: {
