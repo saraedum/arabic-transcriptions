@@ -70,6 +70,37 @@ const special = new RegExp(`(?=[^${[
   '\u065E', // Fatha With Two Dots
   '\u065F', // Wavy Hamza Below
   '\u0670', // Letter Superscript Alef
+  '\u06e1', // Small High Dotless Head Of Khah
+  '\u06e4', // Small High Madda
+  '\u06e5', // Small Waw
+  '\u06e6', // Small Yeh
+  '\u0615', // Small High Tah
+  '\u0616', // Small High Ligature Alef With Lam With Yeh
+  '\u0617', // Smal High Zain
+  '\u0618', // Small Fatha
+  '\u0619', // Small Damma
+  '\u061A', // Small Kasra
+  '\u06D6', // Small High Ligature Sad With Lam With Alef Maksura
+  '\u06D6', // Small High Ligature Sad With Lam With Alef Maksura
+  '\u06D7', // Small High Ligature Qaf With Lam With Alef Maksura
+  '\u06D8', // Small High Meem Initial Form
+  '\u06D9', // Small High Lam Alef
+  '\u06DA', // Small High Jeem
+  '\u06DB', // Small High Three Dots
+  '\u06DC', // Small High Seen
+  '\u06DD', // End of Ayah
+  '\u06DE', // Star of Rub El Hizb
+  '\u06DF', // Small High Rounded Zero
+  '\u06E0', // Small High Upright Rectangular Zero
+  '\u06E1', // Small High Dotless Head Of Khah
+  '\u06E2', // Small High Meem Isolated Form
+  '\u06E3', // Small Low Seen
+  '\u06E4', // Small High Madda
+  '\u06E5', // Small Waw
+  '\u06E6', // Small Yeh
+  '\u06E7', // Small High Yeh
+  '\u06E8', // Small High Noon
+  '\u08C9-\u08FF', // Small Characters in Arabic Extended A
 ].join('')}])`);
 
 export default defineComponent({
