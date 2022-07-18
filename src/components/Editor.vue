@@ -16,6 +16,7 @@
       class="d-print-none"
       label="Arabic Text"
       v-model="arabic"
+      rows="8"
       auto-grow
     ></v-textarea>
     <v-card class="d-print-none">
@@ -30,6 +31,7 @@
       class="d-print-none"
       label="Reading Aid"
       v-model="aid"
+      rows="8"
       auto-grow
     ></v-textarea>
     <v-card flat>
