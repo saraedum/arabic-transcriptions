@@ -211,6 +211,11 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+arabscript@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/arabscript/-/arabscript-0.0.1.tgz#b419a85b33ffc662ca6ac4cbbaf86a2ec0dfbe13"
+  integrity sha512-iw8xBWZ+yFkOzmW9AOGQg/aqPqc+G70DUFShC8pWI2NHmZYQHy/n68aVy9ygZ70T9p5cAW+RY4FV4fmW+MZmVw==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"

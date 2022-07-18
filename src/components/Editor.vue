@@ -18,6 +18,12 @@
       v-model="arabic"
       auto-grow
     ></v-textarea>
+    <v-card class="d-print-none">
+     <v-card-title>Generated Transcription</v-card-title>
+      <v-card-text>
+        {{ script }}
+      </v-card-text>
+    </v-card>
     <v-textarea
       name="input-7-1"
       filled
@@ -50,6 +56,7 @@
 <script lang='ts'>
 import { defineComponent } from 'vue'
 import ArabicLine from "./ArabicLine.vue";
+import arabscript from "arabscript";
 
 export default defineComponent({
   data() {
@@ -82,6 +89,9 @@ fa-ṣ:ā:ra n:ū:ru.
     aids() {
       return this.aid.trim().split('\n');
     },
+    script() {
+      return arabscript(this.arabic);
+    }
   },
 
   methods: {
