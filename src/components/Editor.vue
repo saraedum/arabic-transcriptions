@@ -21,7 +21,7 @@
     <v-card class="d-print-none">
      <v-card-title>Generated Transcription</v-card-title>
       <v-card-text>
-        {{ script }}
+        <span v-html="script"/>
       </v-card-text>
     </v-card>
     <v-textarea
@@ -90,7 +90,7 @@ fa-ṣ:ā:ra n:ū:ru.
       return this.aid.trim().split('\n');
     },
     script() {
-      return arabscript(this.arabic);
+      return this.arabics.map(arabscript).join('<br/>');
     }
   },
 
