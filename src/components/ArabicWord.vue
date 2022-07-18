@@ -133,7 +133,14 @@ export default defineComponent({
     },
     aids() {
       const aid = (this.aid || '').replace(/[,."?!]/g,'').trim()
-      const aids = aid.split(/:|(?=-)|(?<=-)/).filter((aid) => aid);
+
+      function upper(aid: string) {
+        if (aid.length >= 2 && aid[0] === aid[1])
+          return `${aid[0].toUpperCase()}${aid[1].toUpperCase()}${aid.substring(2)}`;
+        return `${aid[0].toUpperCase()}${aid.substring(1)}`;
+      }
+
+      const aids = aid.split(/:|(?=-)|(?<=-)/).filter((aid) => aid).map(upper);
       const chars = [] as Array<string>;
 
       for (let char of aids) {
