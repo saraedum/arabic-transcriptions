@@ -72,7 +72,7 @@ export default defineComponent({
 إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ
 ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ
 صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ`,
-      aid: `bi:s:mi (a):l:lā:hi (a):(l)-ra:ḥ:mā:ni (a):(l)-rra:ḥ:ī:m
+      aid: `bi:s:mi (a):l:lā:hi (a):(l)-ra:ḥ:mā:ni (a):(l)-rra:ḥ:ī:mi
 'a:l-ḥa:m:du li-lā:hi ra:bbu (a):l-ʿā:la:m:ī:n
 'a:(l)-rra:ḥ:mā:ni (a):(l)-rra:ḥ:ī:m
 mā:li:ki ya:w:mi (a):(l)-dd:ī:n
