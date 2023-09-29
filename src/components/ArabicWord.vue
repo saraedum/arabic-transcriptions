@@ -179,6 +179,7 @@ export default defineComponent({
     span {
       padding: .3ex;
       display: inline-block;
+      direction: ltr;
     }
   }
 
@@ -204,7 +205,6 @@ export default defineComponent({
 
 .word.chrome {
   .aid {
-    direction: ltr;
     text-align: center;
 
     span {
